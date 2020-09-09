@@ -1,0 +1,55 @@
+
+
+Uspesno prijavljen korisnik: admin 31.8.2018. 22:21:27
+
+Uspesno ste dodali skolu: Tocak 31.8.2018. 22:21:47
+
+Uspesno ste dodali instruktora: Milos 31.8.2018. 22:22:15
+
+Uspesno ste izmenili skolu: Tocak 31.8.2018. 22:22:53
+
+Uspesno ste izmenili skolu: Tocakk 31.8.2018. 22:23:09
+
+Uspesno ste dodali korisnika: marko 31.8.2018. 22:23:36
+
+Uspesno prijavljen korisnik: marko 31.8.2018. 22:23:50
+
+Uspesno izmenjen korisnik: marko 31.8.2018. 22:24:00
+
+Uspesno ste se odjavili marko 31.8.2018. 22:24:10
+
+Uspesno prijavljen korisnik: admin 31.8.2018. 22:32:21
+
+Uspesno ste duplirali skolu sa imenom: Aluno 31.8.2018. 22:32:25
+
+Uspesno ste duplirali skolu sa imenom: Tocak 31.8.2018. 22:32:40
+
+Uspesno prijavljen korisnik: admin 31.8.2018. 22:34:20
+
+Uspesno ste duplirali skolu sa imenom: Tocak 31.8.2018. 22:34:23
+
+Uspesno prijavljen korisnik: admin 31.8.2018. 22:43:57
+
+Uspesno prijavljen korisnik: admin 31.8.2018. 23:02:33
+
+Uspesno prijavljen korisnik: admin 9.9.2018. 17:23:36
+
+Uspesno ste dodali korisnika: mijatovic 9.9.2018. 17:24:14
+
+Uspesno prijavljen korisnik: mijatovic 9.9.2018. 17:24:39
+
+Uspesno izmenjen korisnik: mijatovic 9.9.2018. 17:24:49
+
+Uspesno prijavljen korisnik: mijatovic 9.9.2018. 17:36:47
+
+Uspesno prijavljen korisnik: mijatovic 9.9.2018. 17:37:35
+
+Uspesno prijavljen korisnik: admin 9.9.2018. 17:51:26
+
+Uspesno ste dodali instruktora: Petar 9.9.2018. 17:51:56
+
+Uspesno izmenjen instruktor: Petar 9.9.2018. 17:52:07
+
+Uspesno prijavljen korisnik: admin 9.9.2018. 18:42:39
+
+Uspesno prijavljen korisnik: admin 9.9.2018. 18:51:30

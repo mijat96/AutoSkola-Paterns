@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E31A5A4-697D-43BF-A8C1-8E7611CCCB9F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Client</RootNamespace>
+    <AssemblyName>Client</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Komande\DodajDozvoluKomanda.cs" />
+    <Compile Include="Komande\DodajDozvoluProzorKomanda.cs" />
+    <Compile Include="Komande\DodajInstruktoraKomanda.cs" />
+    <Compile Include="Komande\DodajInstruktoraProzorKomanda.cs" />
+    <Compile Include="Komande\DodajNovogKorisnikaKomanda.cs" />
+    <Compile Include="Komande\DodajProzorNoveSkoleKomanda.cs" />
+    <Compile Include="Komande\DodajSkoluKomanda.cs" />
+    <Compile Include="Komande\DuplirajSkoluKomanda.cs" />
+    <Compile Include="Komande\IzbrisiDozvoluKomanda.cs" />
+    <Compile Include="Komande\IzbrisiInstruktoraKomanda.cs" />
+    <Compile Include="Komande\IzmeniDozvolu.cs" />
+    <Compile Include="Komande\IzmeniDozvoluPorozorKomanda.cs" />
+    <Compile Include="Komande\IzmeniInstruktora.cs" />
+    <Compile Include="Komande\IzmeniInstruktoraPorozorKomanda.cs" />
+    <Compile Include="Komande\IzmeniKorisnikaKomanda.cs" />
+    <Compile Include="Komande\IzmeniSkoluKomanda.cs" />
+    <Compile Include="Komande\IzmeniSkoluProzorKomanda.cs" />
+    <Compile Include="Komande\OdjavaKomanda.cs" />
+    <Compile Include="Komande\OsveziDozvoleKomanda.cs" />
+    <Compile Include="Komande\OsveziInstruktoreKomanda.cs" />
+    <Compile Include="Komande\OsveziListKomanda.cs" />
+    <Compile Include="Komande\PregledKorisnikaKomanda.cs" />
+    <Compile Include="Komande\PrijavaKomanda.cs" />
+    <Compile Include="Komande\PrikaziInstruktoreProzorKomanda.cs" />
+    <Compile Include="Komande\ProzorPrikazaDozvolaKomanda.cs" />
+    <Compile Include="Komande\RegistracijaKorisnikaKomanda.cs" />
+    <Compile Include="Komande\TraziSkoluKomanda.cs" />
+    <Compile Include="ViewModel\DodajInstruktoreViewModel.cs" />
+    <Compile Include="ViewModel\DodajKorisnikaViewModel.cs" />
+    <Compile Include="ViewModel\DodajNovuSkoluViewModel.cs" />
+    <Compile Include="ViewModel\DozvoleWievModel.cs" />
+    <Compile Include="ViewModel\IzmeniSkoluViewModel.cs" />
+    <Compile Include="ViewModel\MainWindowViewModel.cs" />
+    <Compile Include="ViewModel\PocetnaViewModel.cs" />
+    <Compile Include="ViewModel\PregledKorisnikaViewModel.cs" />
+    <Compile Include="ViewModel\PrikaziInstruktoreViewModel.cs" />
+    <Compile Include="ViewModel\ProzorIzmeneDozvoleViewModel.cs" />
+    <Compile Include="ViewModel\ProzorIzmeneInstruktoraViewModel.cs" />
+    <Compile Include="ViewModel\DodajDozvoleViewModel.cs" />
+    <Compile Include="View\DodajDozvolu.xaml.cs">
+      <DependentUpon>DodajDozvolu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DodajInstruktora.xaml.cs">
+      <DependentUpon>DodajInstruktora.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\DodajKorisnika.xaml.cs">
+      <DependentUpon>DodajKorisnika.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\InstruktoriProzor.xaml.cs">
+      <DependentUpon>InstruktoriProzor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\IzmeniDozvolu.xaml.cs">
+      <DependentUpon>IzmeniDozvolu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\IzmeniInstruktora.xaml.cs">
+      <DependentUpon>IzmeniInstruktora.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\IzmeniSkoluProzor.xaml.cs">
+      <DependentUpon>IzmeniSkoluProzor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\KorisnikPromeni.xaml.cs">
+      <DependentUpon>KorisnikPromeni.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pocetna.xaml.cs">
+      <DependentUpon>Pocetna.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrikaziDozvole.xaml.cs">
+      <DependentUpon>PrikaziDozvole.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProzorSkola.xaml.cs">
+      <DependentUpon>ProzorSkola.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Konekcija.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="View\DodajDozvolu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DodajInstruktora.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\DodajKorisnika.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\InstruktoriProzor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\IzmeniDozvolu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\IzmeniInstruktora.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\IzmeniSkoluProzor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\KorisnikPromeni.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pocetna.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\PrikaziDozvole.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ProzorSkola.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{1FD7DCAD-AAE8-471D-A762-7C31B8CE9B11}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logoutIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="refresh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="autoskola.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

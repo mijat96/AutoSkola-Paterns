@@ -1,0 +1,33 @@
+﻿<Window x:Class="Client.View.PrikaziDozvole"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client.View"
+        mc:Ignorable="d"
+        Title="PrikaziDozvole" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush  Viewport="0,0,1,1"   ImageSource="/Client;component/autoskola.jpg" />
+        </Grid.Background>
+        <Button Content="Dodaj dozvolu"  Command="{Binding DodajDozvoluProzorKomanda}"   HorizontalAlignment="Left" Height="28" Margin="39,354,0,0" VerticalAlignment="Top" Width="96" RenderTransformOrigin="0.301,0.988"/>
+        <DataGrid  AutoGenerateColumns="False" IsReadOnly="True" ItemsSource="{Binding Binding}" SelectedItem="{Binding IzabranaDozvola}" HorizontalAlignment="Left" Height="273" Margin="39,60,0,0" VerticalAlignment="Top" Width="546">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID"  Binding="{Binding IDDozvole}" Width="*"/>
+                <DataGridTextColumn Header="Naziv dozvole"  Binding="{Binding nazivDozvole}" Width="*"/>
+                <DataGridTextColumn Header="Vrsta"  Binding="{Binding vrstaDozvole}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Izmeni dozvolu"   Command="{Binding IzmeniDozvoluPorozorKomanda}" HorizontalAlignment="Left" Height="28" Margin="248,354,0,0" VerticalAlignment="Top" Width="116"/>
+        <Button Content="Izbrisi dozvolu" Command="{Binding IzbrisiDozvoluKomanda}" HorizontalAlignment="Left" Height="28" Margin="481,354,0,0" VerticalAlignment="Top" Width="104"/>
+        <TextBox HorizontalAlignment="Left" Height="32" Margin="626,134,0,0" TextWrapping="Wrap"  Text="{Binding Skola.naziv}"   VerticalAlignment="Top" Width="145"/>
+        <TextBox HorizontalAlignment="Left" Height="33" Margin="626,60,0,0" TextWrapping="Wrap"  Text="{Binding Skola.IDSkole}"   VerticalAlignment="Top" Width="145"/>
+        <Label Content="Ime skole:" Foreground="White" HorizontalAlignment="Left" Height="32" Margin="626,98,0,0" VerticalAlignment="Top" Width="62" RenderTransformOrigin="0.475,0.969"/>
+        <Label Content="ID skole:" Foreground="White" HorizontalAlignment="Left" Height="32" Margin="626,28,0,0" VerticalAlignment="Top" Width="85" RenderTransformOrigin="0.475,0.969"/>
+        <Button Content="" Command="{Binding OsveziDozvoleKomanda}" FontFamily="Khmer UI" HorizontalAlignment="Left" Height="41" Margin="626,221,0,0" VerticalAlignment="Top" Width="132" BorderBrush="{x:Null}" RenderTransformOrigin="-0.099,1.263" >
+            <Button.Background>
+                <ImageBrush ImageSource="/Client;component/refresh.jpg" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+</Window>

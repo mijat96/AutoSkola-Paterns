@@ -1,0 +1,12 @@
+C:\Users\Mijat\source\repos\AutoSkola\Common\bin\Debug\Common.dll.config
+C:\Users\Mijat\source\repos\AutoSkola\Common\bin\Debug\Common.dll
+C:\Users\Mijat\source\repos\AutoSkola\Common\bin\Debug\Common.pdb
+C:\Users\Mijat\source\repos\AutoSkola\Common\bin\Debug\EntityFramework.dll
+C:\Users\Mijat\source\repos\AutoSkola\Common\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mijat\source\repos\AutoSkola\Common\bin\Debug\EntityFramework.xml
+C:\Users\Mijat\source\repos\AutoSkola\Common\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mijat\source\repos\AutoSkola\Common\obj\Debug\Common.csprojAssemblyReference.cache
+C:\Users\Mijat\source\repos\AutoSkola\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\Users\Mijat\source\repos\AutoSkola\Common\obj\Debug\Common.csproj.CopyComplete
+C:\Users\Mijat\source\repos\AutoSkola\Common\obj\Debug\Common.dll
+C:\Users\Mijat\source\repos\AutoSkola\Common\obj\Debug\Common.pdb
